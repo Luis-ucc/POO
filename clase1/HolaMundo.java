@@ -1,8 +1,16 @@
 public class HolaMundo {
 
     public static void main(String [] args) {
-        System.out.println("mi primer hola mundo en java");
+        
+        double a = 2;
+        double b = 5;
+        double c = 0;
 
-        int x=2;
+        c = 3 * a - 4 * b/Math.pow(a, 2);
+
+
+
+        System.out.println("el resultado es " + c);
+
     }
 }
