@@ -58,7 +58,16 @@ public class Condicionales {
             System.out.println("el tiempo es " + tiempo);
         }
 
-        
+        int angu = 90;
+        if (angu < 90) {
+            System.out.println("angulo agudo");
+        } else {
+            if (angu > 90) {
+                System.out.println("angulo obtuso");
+            } else {
+                System.out.println("angulo recto");
+            }
+        }
 
     }
 
