@@ -161,6 +161,14 @@ public class Variables {
         
         System.out.println(score);
 
+ 
+           
+        
+
+
+
+
+
 
 
         
