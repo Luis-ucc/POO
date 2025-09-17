@@ -21,10 +21,18 @@ public class persona {
 
     //metodos
 
-    public void caminar(){}
-    public void jugar(){}
-    public void comer(){}
-    public String estudiar(){}
+    public void caminar(){
+        System.out.println("caminar");
+    }
+    public boolean jugar(){
+        return true;
+    }
+    public void comer(){
+        System.out.println("comiendo");
+    }
+    public String estudiar(String carrera){
+        return "usted esta estudiando: " + carrera;
+    }
 
 
 }
