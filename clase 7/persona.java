@@ -46,6 +46,9 @@ public class persona {
         }
     }
 
+
+    
+
     //tarea consultar sobre el metodo toString
 
 
