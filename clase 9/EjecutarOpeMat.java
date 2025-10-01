@@ -6,6 +6,11 @@ public class EjecutarOpeMat {
 
 
         System.out.println("El resultado de la suma es: " + objOp.sumar());
+        System.out.println("El resultado de la resta es: " + objOp.restar());
+        System.out.println("El resultado de la multiplicacion es: " + objOp.multiplicar());
+        System.out.println("el resultado de la division es: " + objOp.dividir());
+
+
     }
     
 }
