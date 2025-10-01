@@ -1,8 +1,15 @@
+import java.util.Scanner;
+
 public class EjecutarOpeMat {
 
     public static void main(String[] args) {
-        
-        OperacionesMatematicas objOp = new OperacionesMatematicas(8,6);
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("digite el primer numero...");
+        int a = sc.nextInt();
+        System.out.print("digite el segundo numero...");
+        int b = sc.nextInt();
+        OperacionesMatematicas objOp = new OperacionesMatematicas(a,b);
 
 
         System.out.println("El resultado de la suma es: " + objOp.sumar());
@@ -11,6 +18,8 @@ public class EjecutarOpeMat {
         System.out.println("el resultado de la division es: " + objOp.dividir());
 
 
+        sc.close();
+
+
     }
-    
 }
