@@ -20,6 +20,12 @@ public class EjecutarOpeMat {
 
         sc.close();
 
-
+       //tarea: implementar los métodos: elevar el cuadrado
+       // -elevar al cubo
+       // - elevar a la n
+       // - sacar la raiz cuadrada
+       // - sacar la raiz cubica
+       // - sacar la raiz n 
+       // todo con menu de opciones  
     }
 }
