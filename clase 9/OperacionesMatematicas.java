@@ -32,4 +32,9 @@ public class OperacionesMatematicas {
         }
         return resultado;
     }
+
+    public double potencia(){
+        return Math.pow(n1, 2);
+        
+    }
 }
