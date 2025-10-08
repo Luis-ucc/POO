@@ -9,9 +9,9 @@ public class EjecutarOpeMat {
                 int opcion;
         
         do {
-        System.out.print("digite el primer numero...");
+        System.out.print("ingrese el primer numero...");
         int a = sc.nextInt();
-        System.out.print("digite el segundo numero...");
+        System.out.print("ingrese el segundo numero...");
         int b = sc.nextInt();
         OperacionesMatematicas objOp = new OperacionesMatematicas(a,b);
          
@@ -21,11 +21,11 @@ public class EjecutarOpeMat {
             System.out.println("3. Multiplicar");
             System.out.println("4. Dividir");
             System.out.println("5. Elevar a la potencia de 2");
-            System.out.println("6. Elevar al cubo");
-            System.out.println("7. Elevar a la n");
+            System.out.println("6. Elevar a la 3");
+            System.out.println("7. Elevar a un numero deseado");
             System.out.println("8. Sacar raíz cuadrada");
             System.out.println("9. Sacar raíz cúbica");
-            System.out.println("10. Sacar raíz n");
+            System.out.println("10. Sacar raíz deseada");
             System.out.println("11. Salir");
             System.out.println("=======================");
             System.out.print("Seleccione una opción: ");
@@ -60,31 +60,31 @@ public class EjecutarOpeMat {
                     
                 case 5:
                     System.out.println("\nHa seleccionado: Elevar a la potencia de 2");
-                     System.out.println("el resultado de elevar el primer numero al cuadrado es: " + objOp.potencia());
+                     System.out.println("el resultado de elevar el primer numero al cuadrado es: " + objOp.potencia2());
                   
                     break;
 
                                 case 6:
                     System.out.println("\nHa seleccionado: Elevar al cubo");
-                    System.out.println("el resultado de elevar al cubo es " + objOp.cubo());
+                    System.out.println("el resultado de elevar al cubo es " + objOp.potenciacubo());
                    
                     break;
                     
                 case 7:
                     System.out.println("\nHa seleccionado: Elevar a la n");
-                    System.out.println("el resultado de esta potencia entre los 2 numeros es " + objOp.n());
+                    System.out.println("el resultado de esta potencia del primer numero es " + objOp.n());
               
                     break;
                     
                 case 8:
                     System.out.println("Ha seleccionado: Sacar raíz cuadrada");
-                    System.out.println("el resultado de sacarle raiz cuadrada al primer numero es " + objOp.raiz());
+                    System.out.println("el resultado de sacarle raiz cuadrada al primer numero es " + objOp.raizcuadra());
       
                     break;
                     
                 case 9:
                     System.out.println("\nHa seleccionado: Sacar raíz cúbica");
-                    System.out.println("el resultado de la raiz cubica al primer numero es " + objOp.cubic());
+                    System.out.println("el resultado de la raiz cubica al primer numero es " + objOp.raizcubic());
                   
                     break;
                     
@@ -95,11 +95,11 @@ public class EjecutarOpeMat {
                     break;
                     
                 case 11:
-                    System.out.println("\nHasta luego");
+                    System.out.println("\nNos vemos");
                     break;
                     
                 default:
-                    System.out.println("\nOpción inválida. Intente nuevamente.");
+                    System.out.println("\nERROR. Intente nuevamente.");
 
             
                     

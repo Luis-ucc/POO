@@ -33,11 +33,11 @@ public class OperacionesMatematicas {
         return resultado;
     }
 
-    public double potencia(){
+    public double potencia2(){
         return Math.pow(n1, 2);
     }
     
-    public double cubo(){
+    public double potenciacubo(){
         return Math.pow(n2, 3);
     }
 
@@ -45,11 +45,11 @@ public class OperacionesMatematicas {
         return Math.pow(n1, n2);
     }
 
-    public double raiz(){
+    public double raizcuadra(){
         return Math.sqrt(n1);
     }
 
-    public double cubic(){
+    public double raizcubic(){
         return Math.pow(n1, 1.0/3);
     }
 
