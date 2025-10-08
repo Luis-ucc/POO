@@ -60,11 +60,49 @@ public class EjecutarOpeMat {
                     
                 case 5:
                     System.out.println("\nHa seleccionado: Elevar a la potencia de 2");
-                     System.out.println("el resultado de elevar los 2 numeros al cuadrado es: " + objOp.potencia());
+                     System.out.println("el resultado de elevar el primer numero al cuadrado es: " + objOp.potencia());
+                  
+                    break;
+
+                                case 6:
+                    System.out.println("\nHa seleccionado: Elevar al cubo");
+                    System.out.println("el resultado de elevar al cubo es " + objOp.cubo());
+                   
+                    break;
+                    
+                case 7:
+                    System.out.println("\nHa seleccionado: Elevar a la n");
+                    System.out.println("el resultado de esta potencia entre los 2 numeros es " + objOp.n());
+              
+                    break;
+                    
+                case 8:
+                    System.out.println("Ha seleccionado: Sacar raíz cuadrada");
+                    System.out.println("el resultado de sacarle raiz cuadrada al primer numero es " + objOp.raiz());
+      
+                    break;
+                    
+                case 9:
+                    System.out.println("\nHa seleccionado: Sacar raíz cúbica");
+                    System.out.println("el resultado de la raiz cubica al primer numero es " + objOp.cubic());
                   
                     break;
                     
+                case 10:
+                    System.out.println("\nHa seleccionado: Sacar raíz n");
+                    System.out.println("el resultado de la raiz entre los 2 numero es " + objOp.raizn());
+                 
+                    break;
+                    
+                case 11:
+                    System.out.println("\nHasta luego");
+                    break;
+                    
+                default:
+                    System.out.println("\nOpción inválida. Intente nuevamente.");
 
+            
+                    
             }
             
         } while (opcion != 11);
