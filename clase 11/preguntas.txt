@@ -1,0 +1,12 @@
+1 - Encapsulación: Es el principio de ocultar los detalles internos de un objeto y mostrar solo lo necesario.
+    Es importante porque protege los datos, mejora la seguridad y facilita el mantenimiento del código.
+
+2 - Diferencia entre método y constructor: Un método realiza acciones o comportamientos definidos por el objeto. 
+    Un constructor es un tipo especial de método que se ejecuta al crear una instancia del objeto y sirve para inicializar sus atributos.
+
+3 - Atributos privados: Deben ser privados para evitar que el estado interno del objeto sea modificado directamente desde fuera de la clase
+
+4 - Los getters permiten acceder a la informacion y los setters permiten modificar atributos de forma controlada
+
+5 - Falso: Un setter sí debe validar los datos que recibe para asegurar que el objeto siempre mantenga un estado válido y coherente
+

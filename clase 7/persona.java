@@ -15,7 +15,7 @@ public class persona {
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.edad = edad;
-        this.estatura = edad;
+        this.estatura = estatura;
         this.peso = peso;
     }
 
