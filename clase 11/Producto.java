@@ -1,10 +1,10 @@
 public class Producto {
 
-    String codigo;
-    String descripcion;
-    int cantidad = 0;
-    double precioUNI = 0;
-    double descuento = 0.0;
+    private String codigo;
+    private String descripcion;
+    private int cantidad = 0;
+    private double precioUNI = 0;
+    private double descuento = 0.0;
 
     public Producto(){
         this.codigo = "123";
@@ -27,7 +27,7 @@ public class Producto {
     }
 
     public double Apliclardescuento(){
-        double descuento = calcularSubT() * 0.3;
+        double descuento = calcularSubT() * 0.2;
         double subtotal = calcularSubT() - descuento;
         return subtotal;
     }
