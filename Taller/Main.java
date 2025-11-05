@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("=== SISTEMA DE GESTIÓN DE FOTOGRAFÍA ===\n");
+        System.out.println("---- SISTEMA DE GESTIÓN DE FOTOGRAFÍA ---\n");
 
         Cliente cliente1 = new Cliente("12345678", "María González");
         Cliente cliente2 = new Cliente("87654321", "Carlos Rodríguez");
@@ -41,28 +41,28 @@ public class Main {
         Pedido pedido1 = new Pedido(cliente1, productosPedido1, new Date(), "4111111111111111");
         Pedido pedido2 = new Pedido(cliente2, productosPedido2, new Date(), "4222222222222222");
 
-        System.out.println("=== CLIENTES REGISTRADOS ===");
+        System.out.println("--- CLIENTES REGISTRADOS ---");
         cliente1.mostrarInfo();
         cliente2.mostrarInfo();
 
-        System.out.println("\n=== CÁMARAS DISPONIBLES ===");
+        System.out.println("\n--- CÁMARAS DISPONIBLES ---");
         camara1.mostrarInfo();
         camara2.mostrarInfo();
 
-        System.out.println("\n=== PEDIDOS REALIZADOS ===");
+        System.out.println("\n--- PEDIDOS REALIZADOS ---");
         pedido1.mostrarInfo();
         System.out.println();
         pedido2.mostrarInfo();
 
-        System.out.println("\n=== IMPRESIONES ===");
+        System.out.println("\n--- IMPRESIONES ---");
         impresion1.mostrarInfo();
         impresion2.mostrarInfo();
 
-        System.out.println("\n=== DEMOSTRACIÓN DE IMPRESIÓN ===");
+        System.out.println("\n--- DEMOSTRACIÓN DE IMPRESIÓN ---");
         foto1.print();
         foto3.print();
 
-        System.out.println("\n=== ESTADÍSTICAS DEL SISTEMA ===");
+        System.out.println("\n--- ESTADÍSTICAS DEL SISTEMA ---");
         System.out.println("Total de clientes: 2");
         System.out.println("Total de pedidos: 2");
         System.out.println("Total de productos: 3");
