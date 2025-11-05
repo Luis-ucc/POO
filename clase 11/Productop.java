@@ -1,4 +1,4 @@
-public class Producto {
+public class Productop {
 
     private String codigo;
     private String descripcion;
@@ -6,7 +6,7 @@ public class Producto {
     private double precioUNI = 0;
     private double descuento = 0.0;
 
-    public Producto(){
+    public Productop(){
         this.codigo = "123";
         this.descripcion = "refresco";
         this.cantidad = 0;
@@ -14,7 +14,7 @@ public class Producto {
         this.descuento = 0.0;
     }
 
-    public Producto(String codigo, String descripcion, int cantidad, double precioUNI){
+    public Productop(String codigo, String descripcion, int cantidad, double precioUNI){
         this.codigo = codigo;
         this.descripcion = descripcion;
         this.cantidad = cantidad > 0 ? cantidad : 0;
@@ -42,6 +42,8 @@ public class Producto {
     public String toString(){
         return "Producto - codigo: " + codigo + " - descripcion: " + descripcion + " - cantidad: " + cantidad + " - Precio unitario $" + precioUNI;
     }
+
+
 
 
 

@@ -12,7 +12,7 @@ public class principal {
 
         System.out.println("-------------------------------------");
 
-        Producto p0 = new Producto("pantalon", "ropa", 300, 200);
+        Productop p0 = new Productop("pantalon", "ropa", 300, 200);
         System.out.println(p0.calcularSubT());
         System.out.println(p0.Apliclardescuento());
         System.out.println(p0.toString());
