@@ -30,7 +30,7 @@ public class Pedido {
         return numeroTarjetaCredito;
     }
 
-    // Setters
+    
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
