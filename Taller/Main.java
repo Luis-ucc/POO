@@ -12,8 +12,8 @@ public class Main {
         Producto producto2 = new Producto(1022);
         Producto producto3 = new Producto(1033);
 
-        Camara camara1 = new Camara("Canon", "EOS R5");
-        Camara camara2 = new Camara("Nikon", "D850");
+        Camara camara1 = new Camara("Nikon", "D3500");
+        Camara camara2 = new Camara("Sony", "A6400");
 
         Foto foto1 = new Foto("vacaciones_playa.jpg");
         Foto foto2 = new Foto("cumpleaños_familia.jpg");
