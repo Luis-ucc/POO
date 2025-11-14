@@ -50,30 +50,22 @@ class Ascensor {
             if (pisoActual < destino) {
                 direccion = "subiendo";
                 pisoActual++;
-
             } else if (pisoActual > destino) {
-
                 direccion = "bajando";
-
                 pisoActual--;
-
             } else {
 
                 direccion = "detenido";
 
                 puerta.abrir();
-
                 System.out.println(" Llegó al piso " + pisoActual);
-
                 solicitudes.poll();
 
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
                 }
-
                 puerta.cerrar();
-
             }
 
             System.out.println(" Piso actual: " + pisoActual + " (" + direccion + ")");
@@ -93,9 +85,7 @@ class Ascensor {
     }
 
     public int getPisoActual() {
-
         return pisoActual;
-
     }
 
 }
