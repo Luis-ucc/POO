@@ -1,0 +1,5 @@
+primeramente para que un ascensor funcione se necesita un sistema de control, el cual tiene que
+estar conciente de la cantidad de pisos que tiene este edificio. 
+
+entonces el boton tiene que mandar la señal al sistema de control para mandar el ascensor, el sistema de control da las ordenes
+de donde a donde tiene que ir el ascensor y este lo hace.
