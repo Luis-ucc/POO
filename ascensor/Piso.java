@@ -5,6 +5,7 @@ class Piso {
     private BotonPiso bajar; 
 
  
+    // dependiendo del piso el ascensor subira o bajara
     public Piso(int numero, int totalPisos) { 
         this.numero = numero; 
         if (numero < totalPisos) 

@@ -1,5 +1,6 @@
 class BotonPiso extends Boton { 
 
+    //boton de cada piso para llamar al ascensor
     private int piso; 
     private String direccion; 
 
