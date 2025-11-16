@@ -1,5 +1,23 @@
-primeramente para que un ascensor funcione se necesita un sistema de control, el cual tiene que
-estar conciente de la cantidad de pisos que tiene este edificio. 
+El objetivo era desarrollar un sistema de control de ascensores aplicando los principios de Programación Orientada a Objetos.
+El sistema debía simular las funciones básicas:
 
-entonces el boton tiene que mandar la señal al sistema de control para mandar el ascensor, el sistema de control da las ordenes
-de donde a donde tiene que ir el ascensor y este lo hace.
+Llamar al ascensor desde cualquier piso.
+Elegir piso destino desde la cabina.
+Mover el ascensor, abrir/cerrar puertas, detectar fallas y mostrar el estado.
+
+La clase SistemaControl es el cerebro:
+recibe las acciones del usuario y se comunica con el ascensor.
+
+Ascensor contiene una lista para manejar las solicitudes pendientes en orden.
+
+Cuando un usuario llama el ascensor o elige un destino, el piso se agrega a la cola.
+
+En cada movimiento, el ascensor:
+
+Comprueba si hay fallas.
+
+Se desplaza piso a piso.
+
+Abre puertas al llegar y cierra automáticamente después.
+
+El sistema usa Scanner para que el usuario interactúe desde la consola.
