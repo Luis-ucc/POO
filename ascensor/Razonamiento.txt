@@ -2,7 +2,7 @@ El objetivo era desarrollar un sistema de control de ascensores aplicando los pr
 El sistema debía simular las funciones básicas:
 
 Llamar al ascensor desde cualquier piso.
-Elegir piso destino desde la cabina.
+Elegir piso destino desde el ascensor.
 Mover el ascensor, abrir/cerrar puertas, detectar fallas y mostrar el estado.
 
 La clase SistemaControl es el cerebro:
