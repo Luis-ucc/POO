@@ -1,10 +1,12 @@
 import java.util.ArrayList;
 import java.util.List;
 
+// Sistema de control del ascensor que maneja las solicitudes desde pisos y adentro del ascensor
 class SistemaControl {
     private Ascensor ascensor;
     private List<Piso> pisos;
 
+    //contructor del Sistema de control del ascensor con la cantidad de pisos
     public SistemaControl(int cantidadPisos) {
         ascensor = new Ascensor();
         pisos = new ArrayList<>();

@@ -1,5 +1,6 @@
 class Puerta { 
 
+    //Controla la puerta del ascensor, permitiendo abrirla y cerrarla.
     private boolean abierta = false; 
 
     public void abrir() { 

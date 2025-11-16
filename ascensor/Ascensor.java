@@ -21,7 +21,7 @@ class Ascensor {
     public void solicitarPiso(int destino) {
         if (!solicitudes.contains(destino)) {
             solicitudes.add(destino);
-            System.out.println("🟢 Solicitud recibida para el piso " + destino);
+            System.out.println(led("verde", " Solicitud recibida para el piso " + destino));
             organizarSolicitudes();
             moverAutomatico();
         }
@@ -35,6 +35,7 @@ class Ascensor {
         }
     }
 
+    // Función para mostrar texto con un LED de color específico
     private String led(String color, String texto) {
         switch (color.toLowerCase()) {
             case "verde":
@@ -50,6 +51,7 @@ class Ascensor {
         }
     }
 
+    // panel que muestra el estado del ascensor con su respectiva iluminacion.
     private void mostrarPanel(int pisoActual, String direccion, int destino) {
         System.out.println("\n======= PANEL DEL ASCENSOR =======");
         System.out.println(led("azul", "Piso actual: " + pisoActual));
@@ -65,17 +67,42 @@ class Ascensor {
         System.out.println("===================================\n");
     }
 
+    private int siguienteDestino() {
+        if (direccion.equals("subiendo")) {
+            for (int piso : solicitudes) {
+                if (piso >= pisoActual)
+                    return piso;
+            }
+        }
+
+        if (direccion.equals("bajando")) {
+            for (int piso : solicitudes) {
+                if (piso <= pisoActual)
+                    return piso;
+            }
+        }
+
+        if (solicitudes.get(0) > pisoActual)
+            direccion = "subiendo";
+        else
+            direccion = "bajando";
+
+        organizarSolicitudes();
+        return solicitudes.get(0);
+    }
+
     private void moverAutomatico() {
         while (!solicitudes.isEmpty()) {
             int destino = siguienteDestino();
-
+            
+            // activacion del sensor de fallas con una probabilidad baja
             if (sensor.detectarFalla()) {
                 System.out.println(led("rojo", " Falla detectada. Ascensor detenido en piso " + pisoActual));
                 puerta.abrir();
                 solicitudes.clear();
                 return;
             }
-
+                //movimiento del ascensor
             if (pisoActual < destino) {
                 direccion = "subiendo";
                 pisoActual++;
@@ -83,6 +110,7 @@ class Ascensor {
                 direccion = "bajando";
                 pisoActual--;
             } else {
+                //llega al destino
                 direccion = "detenido";
                 puerta.abrir();
                 System.out.println(led("azul", " Llegó al piso " + pisoActual));
@@ -110,30 +138,6 @@ class Ascensor {
 
     public int getPisoActual() {
         return pisoActual;
-    }
-
-    private int siguienteDestino() {
-        if (direccion.equals("subiendo")) {
-            for (int piso : solicitudes) {
-                if (piso >= pisoActual)
-                    return piso;
-            }
-        }
-
-        if (direccion.equals("bajando")) {
-            for (int piso : solicitudes) {
-                if (piso <= pisoActual)
-                    return piso;
-            }
-        }
-
-        if (solicitudes.get(0) > pisoActual)
-            direccion = "subiendo";
-        else
-            direccion = "bajando";
-
-        organizarSolicitudes();
-        return solicitudes.get(0);
     }
 
 }

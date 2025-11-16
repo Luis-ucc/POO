@@ -7,7 +7,7 @@ public class MainAscensor {
         SistemaControl sistema = new SistemaControl(10); 
         boolean salir = false; 
 
-
+    // Menu principal donde el usuario puede interactuar con el sistema del ascensor
         System.out.println("----  SISTEMA DE ASCENSOR ----"); 
 
  
