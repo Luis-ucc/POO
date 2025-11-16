@@ -8,7 +8,7 @@ public class MainAscensor {
         boolean salir = false; 
 
 
-        System.out.println("=====  SISTEMA DE ASCENSOR ====="); 
+        System.out.println("----  SISTEMA DE ASCENSOR ----"); 
 
  
         while (!salir) { 
